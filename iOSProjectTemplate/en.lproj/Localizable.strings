@@ -1,0 +1,13 @@
+/**
+	@file	Localizable.strings
+	@author	Carlin
+	@date	7/12/13
+	@brief	iOSProjectTemplate
+*/
+//  Copyright (c) 2013 Carlin. All rights reserved.
+
+
+"APP_VIEW_TITLE" = "iOS Project Template";
+
+"INFO_VIEW_TITLE" = "Info";
+"INFO_VIEW_BRANDING_TEXT" = "Carlin";
