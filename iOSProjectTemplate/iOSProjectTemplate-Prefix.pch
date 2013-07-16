@@ -1,5 +1,5 @@
 //
-// Prefix header for all source files of the 'iOSProjectTemplate' target in the 'iOSProjectTemplate' project
+// Prefix header for all source files of the target in the project
 //
 
 #import <Availability.h>

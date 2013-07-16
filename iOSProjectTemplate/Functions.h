@@ -46,7 +46,10 @@
 
 	/** Generate random float in range */
 	#define randomf(rangeStart, rangeEnd) ((((float) (arc4random() % ((unsigned)RAND_MAX + 1)) / RAND_MAX) * (rangeEnd - rangeStart)) + rangeStart)
-	
+
+	/** Take out all punctuation in a string */
+	#define NSStringWithoutPunctuation(s) ([[s componentsSeparatedByCharactersInSet: [NSCharacterSet punctuationCharacterSet]] componentsJoinedByString:@""])
+
 
 //////////////////////////////////////////////
 // Screen Dimensions
