@@ -68,6 +68,12 @@
 //////////////////////////////////////////////
 // App Bundle & Device Properties
 
+	/** Get unique device identifier */
+	#define getDeviceID() ([[UIDevice currentDevice] identifierForVendor])
+
+	/** Get device's user-defined name "Carlin's iPhone" */
+	#define getDeviceName() ([[UIDevice currentDevice] name])
+
 	/** Get Device OS version */
 	#define getDeviceOSVersionString() ([[UIDevice currentDevice] systemVersion])
 
