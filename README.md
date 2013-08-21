@@ -24,6 +24,19 @@ in a reasonable manner:
 
 Feel free to take it & use it if you find it useful / like the style.
 
+### Usage
+
+To use, copy and paste the folder to wherever you want it. Then follow the steps
+to rename your Xcode project without messing everything up:
+
+ 1. Rename the folder that contains the entire project (including the .xcodeproj)
+ 2. DO NOT rename the .xcodeproj file yourself, open up the project and rename in Xcode.
+ 3. Rename the Scheme by going to Manage Schemes to select and rename.
+
+That should be about it! This will rename all the appropriate files necessary to
+build and run your project as needed. The Project root folder will not be
+renamed though, as a caveat.
+
 License
 -------
 MIT
