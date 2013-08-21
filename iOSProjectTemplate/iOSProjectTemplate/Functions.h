@@ -38,8 +38,8 @@
 //////////////////////////////////////////////
 // Utility Functions
 
-	/** Rotate CGRect */
-	#define rotateCGRect(r) (CGRectMake(r.origin.y, r.origin.x, r.size.height, r.size.width))
+	/** Transpose CGRect */
+	#define transposeCGRect(r) (CGRectMake(r.origin.y, r.origin.x, r.size.height, r.size.width))
 
 	/** Create UIColor form hex code color value */
 	#define UIColorFromHex(hex) [UIColor colorWithRed:((float)((hex & 0xFF000000) >> 24))/255.0 green:((float)((hex & 0xFF0000) >> 16))/255.0 blue:((float)((hex & 0xFF00) >> 8))/255.0 alpha:((float)(hex & 0xFF))/255.0]
@@ -49,6 +49,12 @@
 
 	/** Take out all punctuation in a string */
 	#define NSStringWithoutPunctuation(s) ([[s componentsSeparatedByCharactersInSet: [NSCharacterSet punctuationCharacterSet]] componentsJoinedByString:@""])
+
+	/** Convert radians to degrees */
+	#define radiansToDegrees(r) ((r) * 180.0 / M_PI)
+
+	/** Convert degrees to radians */
+	#define degreesToRadians(d) ((d) / 180.0 * M_PI)
 
 
 //////////////////////////////////////////////
