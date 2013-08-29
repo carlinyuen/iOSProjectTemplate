@@ -19,6 +19,10 @@
 		5F7C897D1790AF3300018AD7 /* AppViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F7C897B1790AF3300018AD7 /* AppViewController.xib */; };
 		5F7C89801790B17800018AD7 /* InfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F7C897F1790B17800018AD7 /* InfoViewController.m */; };
 		5F7C8982179439A700018AD7 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F7C8981179439A600018AD7 /* Default-568h@2x.png */; };
+		5FE4263517CF8E55009F7652 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FE4263417CF8E55009F7652 /* libz.dylib */; };
+		5FE4263D17CF8E7D009F7652 /* libTestFlight.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FE4263717CF8E7D009F7652 /* libTestFlight.a */; };
+		5FE4263E17CF8E7D009F7652 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 5FE4263817CF8E7D009F7652 /* README.md */; };
+		5FE4263F17CF8E7D009F7652 /* release_notes.md in Resources */ = {isa = PBXBuildFile; fileRef = 5FE4263917CF8E7D009F7652 /* release_notes.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +46,13 @@
 		5F7C897E1790B17700018AD7 /* InfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfoViewController.h; sourceTree = "<group>"; };
 		5F7C897F1790B17800018AD7 /* InfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InfoViewController.m; sourceTree = "<group>"; };
 		5F7C8981179439A600018AD7 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "../Default-568h@2x.png"; sourceTree = "<group>"; };
+		5FE4263417CF8E55009F7652 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		5FE4263717CF8E7D009F7652 /* libTestFlight.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libTestFlight.a; sourceTree = "<group>"; };
+		5FE4263817CF8E7D009F7652 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		5FE4263917CF8E7D009F7652 /* release_notes.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = release_notes.md; sourceTree = "<group>"; };
+		5FE4263A17CF8E7D009F7652 /* TestFlight+AsyncLogging.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TestFlight+AsyncLogging.h"; sourceTree = "<group>"; };
+		5FE4263B17CF8E7D009F7652 /* TestFlight+ManualSessions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TestFlight+ManualSessions.h"; sourceTree = "<group>"; };
+		5FE4263C17CF8E7D009F7652 /* TestFlight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestFlight.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,9 +60,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5FE4263517CF8E55009F7652 /* libz.dylib in Frameworks */,
 				5F7C892F1790A36700018AD7 /* UIKit.framework in Frameworks */,
 				5F7C89311790A36700018AD7 /* Foundation.framework in Frameworks */,
 				5F7C89331790A36700018AD7 /* CoreGraphics.framework in Frameworks */,
+				5FE4263D17CF8E7D009F7652 /* libTestFlight.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +91,7 @@
 		5F7C892D1790A36700018AD7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				5FE4263417CF8E55009F7652 /* libz.dylib */,
 				5F7C892E1790A36700018AD7 /* UIKit.framework */,
 				5F7C89301790A36700018AD7 /* Foundation.framework */,
 				5F7C89321790A36700018AD7 /* CoreGraphics.framework */,
@@ -121,6 +135,7 @@
 		5F7C89731790AF0800018AD7 /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
+				5FE4263617CF8E7D009F7652 /* TestFlightSDK2.0.0 */,
 			);
 			path = Libraries;
 			sourceTree = "<group>";
@@ -162,6 +177,19 @@
 				5F7C897F1790B17800018AD7 /* InfoViewController.m */,
 			);
 			path = "Views & Controllers";
+			sourceTree = "<group>";
+		};
+		5FE4263617CF8E7D009F7652 /* TestFlightSDK2.0.0 */ = {
+			isa = PBXGroup;
+			children = (
+				5FE4263717CF8E7D009F7652 /* libTestFlight.a */,
+				5FE4263817CF8E7D009F7652 /* README.md */,
+				5FE4263917CF8E7D009F7652 /* release_notes.md */,
+				5FE4263A17CF8E7D009F7652 /* TestFlight+AsyncLogging.h */,
+				5FE4263B17CF8E7D009F7652 /* TestFlight+ManualSessions.h */,
+				5FE4263C17CF8E7D009F7652 /* TestFlight.h */,
+			);
+			path = TestFlightSDK2.0.0;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -219,6 +247,8 @@
 				5F7C895F1790A65000018AD7 /* Localizable.strings in Resources */,
 				5F7C897D1790AF3300018AD7 /* AppViewController.xib in Resources */,
 				5F7C8982179439A700018AD7 /* Default-568h@2x.png in Resources */,
+				5FE4263E17CF8E7D009F7652 /* README.md in Resources */,
+				5FE4263F17CF8E7D009F7652 /* release_notes.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,6 +301,7 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Carlin Yuen (CB7P22G8XW)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -286,6 +317,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "6284A248-F13E-40B9-BD5E-033A4BC04EF5";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -303,6 +335,7 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Carlin Yuen (8FWA72NP3B)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -311,6 +344,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PROVISIONING_PROFILE = "248E8B40-8695-41DB-A9F6-29472E93D6F0";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -324,6 +358,10 @@
 				GCC_PREFIX_HEADER = "iOSProjectTemplate/iOSProjectTemplate-Prefix.pch";
 				INFOPLIST_FILE = "iOSProjectTemplate/iOSProjectTemplate-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/iOSProjectTemplate/Libraries/TestFlightSDK2.0.0\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -336,6 +374,10 @@
 				GCC_PREFIX_HEADER = "iOSProjectTemplate/iOSProjectTemplate-Prefix.pch";
 				INFOPLIST_FILE = "iOSProjectTemplate/iOSProjectTemplate-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/iOSProjectTemplate/Libraries/TestFlightSDK2.0.0\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

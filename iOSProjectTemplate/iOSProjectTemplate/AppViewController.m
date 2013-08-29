@@ -68,7 +68,7 @@
 {
 	// Color
 	self.navigationController.navigationBar.barStyle = UIBarStyleBlackTranslucent;
-
+	
 	// Info button
 	UIButton* infoButton = [UIButton buttonWithType:UIButtonTypeInfoLight];
 	CGRect frame = infoButton.frame;

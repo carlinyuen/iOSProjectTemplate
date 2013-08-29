@@ -38,14 +38,14 @@
 //////////////////////////////////////////////
 // Utility Functions
 
-	/** Transpose CGRect */
-	#define transposeCGRect(r) (CGRectMake(r.origin.y, r.origin.x, r.size.height, r.size.width))
+	/** Rotate CGRect 90 degrees, useful for rotated orientations */
+	#define CGRectRotate(r) (CGRectMake(r.origin.y, r.origin.x, r.size.height, r.size.width))
 
 	/** Create UIColor form hex code color value */
 	#define UIColorFromHex(hex) [UIColor colorWithRed:((float)((hex & 0xFF000000) >> 24))/255.0 green:((float)((hex & 0xFF0000) >> 16))/255.0 blue:((float)((hex & 0xFF00) >> 8))/255.0 alpha:((float)(hex & 0xFF))/255.0]
 
 	/** Generate random float in range */
-	#define randomf(rangeStart, rangeEnd) ((((float) (arc4random() % ((unsigned)RAND_MAX + 1)) / RAND_MAX) * (rangeEnd - rangeStart)) + rangeStart)
+	#define randf(rangeStart, rangeEnd) ((((float) (arc4random() % ((unsigned)RAND_MAX + 1)) / RAND_MAX) * (rangeEnd - rangeStart)) + rangeStart)
 
 	/** Take out all punctuation in a string */
 	#define NSStringWithoutPunctuation(s) ([[s componentsSeparatedByCharactersInSet: [NSCharacterSet punctuationCharacterSet]] componentsJoinedByString:@""])
@@ -55,6 +55,12 @@
 
 	/** Convert degrees to radians */
 	#define degreesToRadians(d) ((d) / 180.0 * M_PI)
+	
+	/** Instant quick code to make an alert view with two buttons */
+	#define createAlert(title, msg, del, cancel, other) ([[UIAlertView alloc] initWithTitle:title message:msg delegate:del cancelButtonTitle:cancel otherButtonTitles:other, nil])
+
+	/** Shortcut for NSLocalizedString("KEY", "COMMENT") */
+	#define localize(s) NSLocalizedString((s), (s))
 
 
 //////////////////////////////////////////////
